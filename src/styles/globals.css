@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fixed_bottom_container {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main_container {
+  position: absolute;
+  top: 20%; /* Adjust the value based on the fixed distance you want */
+  z-index: 1;
+}
+
+.navbar {
+  position: absolute;
+  top: 4%;
+  z-index: 0;
+}
+
+@font-face {
+  font-family: "monterey-regular";
+  src: url("/fonts/Monterey/MontereyFLF.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
