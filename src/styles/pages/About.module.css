@@ -1,0 +1,31 @@
+.mainContent {
+	font-family: var(--font-gilgan), sans-serif;
+	font-size: 12pt;
+	gap: 20px; 
+	padding: 0 70px;
+	max-width: 1200px;
+	margin: 20px auto 0;
+	line-height: 1.5;
+}
+
+.bioContent {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 10%; 
+	align-items: start; 
+	margin-top: 50px;
+}
+
+.bioContent img {
+	width: 100%; 
+	height: auto; 
+	align-self: start;
+}
+
+.bioText {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; 
+	font-size: 10pt; 
+	transform: translateY(-16px); 
+}

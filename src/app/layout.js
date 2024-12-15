@@ -1,7 +1,21 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import "@/styles/globals.css"
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const jura = localFont({ 
+  src: '/static_fonts/Jura-Regular.ttf',
+  variable: '--font-jura', 
+});
+
+const thermidava = localFont({ 
+  src:  '/static_fonts/Thermidava Regular.ttf'  /* '@/ static_fonts/Thermidava Regular.ttf' */,
+  variable: '--font-thermidava', 
+});
+
+const gilgan = localFont({ 
+  src: '/static_fonts/Gilgan-Regular.ttf',
+  variable: '--font-gilgan', 
+});
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +24,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${jura.variable} ${thermidava.variable} ${gilgan.variable} font-sans h-full`}>
+      <body>{children}</body>
     </html>
   )
 }

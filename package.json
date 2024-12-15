@@ -3,15 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.18",
+    "@nextui-org/slider": "^2.2.15",
+    "@react-three/drei": "^9.92.6",
+    "@react-three/fiber": "^8.15.12",
+    "next": "^14.2.20",
+    "punycode": "^2.3.1",
+    "raw-loader": "^4.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.7"
+    "three": "^0.160.0",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
     "eslint": "^8",

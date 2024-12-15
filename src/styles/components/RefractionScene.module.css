@@ -1,0 +1,18 @@
+.sliderGroup {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sliderContainer {
+    background-color: white;
+    margin-top: 5px;
+    position: relative;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7%;
+    width: 100%;
+    max-width: 1200px;
+}

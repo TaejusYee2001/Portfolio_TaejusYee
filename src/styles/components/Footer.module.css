@@ -1,0 +1,72 @@
+.footer {
+  background-color: white;
+  padding: 0px 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--font-thermidava), sans-serif;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgb(197, 197, 197);
+  width: calc(100% - 140px);
+  margin: 0 auto;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: black;
+  font-size: 14px;
+  margin: 0;
+}
+
+.socialLinks {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.socialIcon {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.socialIcon:hover {
+  opacity: 0.6;
+}
+
+.logoImage {
+  object-fit: contain;
+}
+
+.githubLogo {
+  width: 35px;
+  height: 35px;
+  transform: translate(0px, 1px);
+}
+
+.linkedinLogo {
+  width: 37px;
+  height: 37px;
+}
+
+.instagramLogo {
+  width: 33px;
+  height: 33px;
+  transform: translate(0px, 2px);
+}
