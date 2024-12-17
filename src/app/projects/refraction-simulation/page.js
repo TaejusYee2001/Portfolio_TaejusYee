@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import RefractionScene from '@/components/refraction/RefractionScene';
+import OctreeScene from '@/components/octree/OctreeScene';
 import styles from '@/styles/pages/ProjectPages.module.css';
 
 const FlockingSim = () => {
@@ -13,7 +14,7 @@ const FlockingSim = () => {
         </div>
         <div className={styles.linkContainer}>
 					<a
-						href="https://github.com/TaejusYee2001/Low-Light_PTZ_Object_Tracker"
+						href="https://github.com/TaejusYee2001/Portfolio_TaejusYee/tree/master/src/components/refraction"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.linkButton}
@@ -26,7 +27,7 @@ const FlockingSim = () => {
             Description:
           </h1>
           <p>
-            This project explores the physics of light refraction through an interactive computational simulation. It leverages
+            This project, inspired by this <a href="https://blog.maximeheckel.com/posts/refraction-dispersion-and-other-shader-light-effects/" target="_blank" rel="noopener noreferrer" className={styles.embeddedLink}>blog post</a>, explores the physics of light refraction through an interactive computational simulation. It leverages
             modern web technologies and 3D graphics frameworks to create a dynamic visualization that allows real-time manipulation of 
             optical properties. In doing so, this simulation aims to provide an intuitive understanding of how light bends and transforms 
             when passing through transparent mediums. The implementation uses <a href="https://threejs.org/" 
@@ -34,7 +35,8 @@ const FlockingSim = () => {
             to render the optical interactions. 
           </p>
         </div>
-        <RefractionScene/>
+        {<RefractionScene/>}
+        {/*<OctreeScene/>*/}
         <div className={styles.descriptionContainer}>
           <h1>
             Understading Optical Parameters
@@ -51,7 +53,7 @@ const FlockingSim = () => {
             <b>Refraction Power</b>
           </p>
           <p>
-            This parameter controls the overall intensity of light bending and distortion. In actuality, this parameter would be the closest to the <a href="https://en.wikipedia.org/wiki/Refractive_index" target="_blank" rel="noopener noreferrer" className={styles.embeddedLink}>refractive index</a> of a material.
+            This parameter controls the overall intensity of light bending and distortion. A property of the material, this parameter would be the closest to the <a href="https://en.wikipedia.org/wiki/Refractive_index" target="_blank" rel="noopener noreferrer" className={styles.embeddedLink}>refractive index</a> physicists are familiar with.
           </p>
           <p>
             <b>Chromatic Aberration</b>
