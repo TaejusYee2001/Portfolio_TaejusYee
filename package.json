@@ -15,6 +15,7 @@
     "@nextui-org/slider": "^2.2.15",
     "@react-three/drei": "^9.92.6",
     "@react-three/fiber": "^8.15.12",
+    "@vercel/analytics": "^1.4.1",
     "next": "^14.2.20",
     "punycode": "^2.3.1",
     "raw-loader": "^4.0.2",
